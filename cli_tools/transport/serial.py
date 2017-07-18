@@ -26,12 +26,19 @@ from __future__ import absolute_import
 import serial
 import time
 
-from pySim.exceptions import NoCardError, ProtocolError
-from pySim.transport import LinkBase
-from pySim.utils import h2b, b2h
+from utils import h2b, b2h
+
+import exceptions
 
 
-class SerialSimLink(LinkBase):
+class NoCardError(exceptions.Exception):
+	pass
+
+class ProtocolError(exceptions.Exception):
+	pass
+
+
+class SerialSimLink():
 
 	def __init__(self, device='/dev/ttyUSB0', baudrate=9600, rst='-rts', debug=False):
 		self._sl = serial.Serial(
