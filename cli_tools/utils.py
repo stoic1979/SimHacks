@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #
 #
 # This script contains utility functions from taken
