@@ -3,7 +3,6 @@
 #
 # Phonebook to display contacts and SMS of a SIM card
 #
-#
 # Copyright (C) 2017  Navjot Singh <weavebytes@gmail.com>
 #
 # This program is free software: you can redistribute it and/or modify
@@ -29,7 +28,6 @@ from binascii import hexlify, unhexlify
 
 from sms import SMSmessage
 import traceback
-
 
 
 class Phonebook():
