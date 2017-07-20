@@ -22,7 +22,6 @@
 
 from transport.serial import SerialSimLink
 from utils import *
-from constants import *
 from binascii import hexlify, unhexlify
 import traceback
 
@@ -41,8 +40,23 @@ class SimTester():
         # program the card
         print("[SimTester] Reading SIM card ...")
 
+    def send_apdu_list(self, lst):
+        for apdu in lst:
+            print ("In: %s" % apdu)
+            out, sw = self.sl.send_apdu_raw(apdu)
+            print "SW:", sw
+            print "OUT:", out
+            print
+
+    def send_apdu_list_prefixed(self, lst):
+        lst = ["A0A4000002" + l for l in lst]
+        print ("Prefixed list: %s" % lst)
+        self.send_apdu_list(lst)
+
 
 if __name__ == '__main__':
     device="/dev/ttyUSB0"
     baudrate = 9600
     tester = SimTester(device='/dev/ttyUSB0', baudrate=9600)
+
+    data, sw = tester.send_apdu_list_prefixed(['3F00', '2FE2'])
