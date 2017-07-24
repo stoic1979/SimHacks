@@ -1,0 +1,7 @@
+Scan Smart Cards on Linux
+============================
+
+$ sudo apt-get install libpcsclite1 pcscd pcsc-tools
+$ pcsc_scan
+
+Refer: https://help.ubuntu.com/community/CommonAccessCard
