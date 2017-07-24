@@ -1,0 +1,40 @@
+Some applications of Smart Cards
+=================================
+
+Automated fare collection system
+ID Cards
+Access Management
+Campus cards
+Loyalty cards (reward points)
+Tourist cards
+Micropayment (Mobile wallet, contactless payment, cashless payment)
+Road tolling
+Transport ticketing
+Event ticketing
+Mobile ticketing
+Citizen card
+Membership cards
+Parking
+Library cards
+Fuel cards
+Hotel key cards
+NFC Tag (NFC apps, MIFARE4Mobile)
+Taxi cards
+Smart meter
+Museum Access Cards
+Product Authentication
+Production control
+Health cards
+Ferry Cards
+Car rentals
+Fleet Management
+Amusement parks
+Bike rentals
+Blood donor cards
+Information services
+Interactive exhibits
+Interactive lotteries
+Password storage
+Smart advertising
+Social welfare
+Waste management
