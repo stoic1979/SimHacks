@@ -167,6 +167,11 @@ class Phonebook():
 if __name__ == '__main__':
     pb = Phonebook(device='/dev/ttyUSB0', baudrate=9600)
 
-    print pb.get_contacts()
-    print pb.get_sms()
+    contacts_lst = pb.get_contacts()
+    sms_lst = pb.get_sms()
+
+    print "-------------------------------------------------"
+    print "Contacts:", contacts_lst
+    print "SMS:", sms_lst
+    print "-------------------------------------------------"
 
