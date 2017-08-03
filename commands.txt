@@ -5,3 +5,8 @@ $ sudo apt-get install libpcsclite1 pcscd pcsc-tools
 $ pcsc_scan
 
 Refer: https://help.ubuntu.com/community/CommonAccessCard
+
+
+$ sudo apt install opensc
+$ opensc-tool
+https://linux.die.net/man/1/opensc-tool
